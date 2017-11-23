@@ -6,6 +6,7 @@ int main(){
     writingE();
     writingL();
     writingI();
+    writingM();
 
 }
 
@@ -113,6 +114,37 @@ void writingI(){
             }
         }
         printf("\n");
+    }
+    printf("\n\n\n");
+}
+
+void writingM(){
+    system("color c");
+    int i,j,upStart=0,upEnd=19;
+    for(i=0;i<20;i++){
+        printf(" ");
+        for(j=0;j<6;j++)
+        {
+            printf("*");
+            Sleep(10);
+        }
+        for(j=0;j<20;j++){
+            if(j>upStart && j<upEnd){
+                printf(" ");
+            }
+            else{
+                printf("\xdb");
+                Sleep(10);
+            }
+        }
+        for(j=0;j<6;j++)
+        {
+            printf("*");
+            Sleep(10);
+        }
+        printf("\n");
+        upStart++;
+        upEnd--;
     }
     printf("\n\n\n");
 }
