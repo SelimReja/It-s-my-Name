@@ -4,6 +4,7 @@
 int main(){
     writingS();
     writingE();
+    writingL();
 
 }
 
@@ -62,6 +63,28 @@ void writingE(){
             }
 
 
+
+        }
+        printf("\n");
+    }
+    printf("\n\n\n");
+}
+
+void writingL(){
+    system("color c");
+    int a,b,c,d;
+    printf("\n\n");
+    for(a=0;a<20;a++){
+        printf("\t");
+        for(b=0;b<22;b++){
+
+            if(a>=0&&a<=15&&b>=8){
+                printf(" ");
+            }
+            else{
+                printf("*");
+                Sleep(10);
+            }
 
         }
         printf("\n");
