@@ -2,6 +2,12 @@
 #include<windows.h>
 
 int main(){
+    writingS();
+    writingE();
+
+}
+
+void writingS(){
     int i, j;
     system("color c");
     printf("\n\n");
@@ -33,4 +39,32 @@ int main(){
         }
         printf("\n");
     }
+}
+
+void writingE(){
+    system("color c");
+    int a,b;
+    printf("\n\n");
+    for(a=0;a<20;a++){
+        printf("\t");
+        for(b=0;b<22;b++){
+
+            if(a>=4&&a<=7&&b>=7){
+                printf(" ");
+            }
+            else if(a>=12&&a<=15&&b>=7){
+                printf(" ");
+            }
+
+            else{
+                printf("*");
+                Sleep(10);
+            }
+
+
+
+        }
+        printf("\n");
+    }
+    printf("\n\n\n");
 }
